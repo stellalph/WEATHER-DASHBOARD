@@ -31,21 +31,21 @@ THEN I am again presented with the current and future conditions for that city
     Microsoft Bing free image (The Twelve Apostles, Victoria) was used as a background image.
     <br>
    
-3) The below screenshots show the process the user would go through to see the current and future conditions for the chosen city.
+3) The below screenshots show the process the user would go through to see the current and future weather conditions for the chosen city.
 
 
 #### <em>Search for a city</em> 
-    Enter the city in the form input for Search for a city will bring on the weather conditions for that city, 5-day forecast, UV index and all required criteria.
+    Enter the city in the form input for "Search for a city" will bring on the weather conditions for that city, 5-day forecast, UV index and all required criteria.
 
 ![alt text](assets/images/Image03.png)
        
 #### <em>Searched results are saved</em> 
-    The searched city is saved or stored in search history
+    The searched city is saved or stored in search history. The traveller can view the past searches by clicking on the button for the searched city.
 
 ![alt text](assets/images/Image04.png)
 
-#### <em>Searched results are available in the search history</em>
-    The traveller can view the past searches by clicking on the button for the searched city.  
+#### <em>Past searches can be cleared</em>
+    The past searches can be cleared by the click on the bin icon and the default city is Adelaide. 
     
 ![alt text](assets/images/Image05.png)
 
