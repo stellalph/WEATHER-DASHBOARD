@@ -37,17 +37,17 @@ THEN I am again presented with the current and future conditions for that city
 #### <em>Search for a city</em> 
     Enter the city in the form input for Search for a city will bring on the weather conditions for that city, 5-day forecast, UV index and all required criteria.
 
-![alt text](assets/images/image03.png)
+![alt text](assets/images/Image03.png)
        
 #### <em>Searched results are saved</em> 
     The searched city is searched in search history
 
-![alt text](assets/images/image04.png)
+![alt text](assets/images/Image04.png)
 
 #### <em>Searched results are available in the search history</em>
     The traveller can view the past searches.  
     
-![alt text](assets/images/image05.png)
+![alt text](assets/images/Image05.png)
 
 
 4) The layout is also responsive and caters for mobile, tablets and desktop. 
