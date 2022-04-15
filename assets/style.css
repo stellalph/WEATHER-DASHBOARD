@@ -1,7 +1,7 @@
-/* Google Font */
+/* Import from Google Font - https://fonts.google.com*/
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Red+Hat+Text:wght@400;700&family=Roboto:wght@100&display=swap');
-/* Set font for page */
+/* For the page */
 
 * {
 
@@ -44,7 +44,7 @@ height: 55px;
 font-size: 20px;
 }
 
-/* UV Index Colors from https://www.epa.gov/sunsafety/uv-index-scale-0*/
+/* UV Index Colors from https:arpansa.gov.au/our-services/monitoring/ultraviolet-radiation-monitoring/ultraviolet-radiation-index*/
 .green-uv {
     /* >= 0 && < 3*/
     background-color: green;
@@ -76,13 +76,12 @@ div.card {
 }
 
 /* Footer CSS */
-/* https://css-tricks.com/couple-takes-sticky-footer/ */
 
 footer.footer {
-    flex-shrink: 0;
+    flex-shrink: 1;
     font-size: .5rem;
     background-color:rgb(4, 53, 63);
-    border-top: 10px solid black;
+    border-top: 2px solid black;
     font-weight: bolder;
 }
 /* Media Queries for Background Images - https://web.dev/optimize-css-background-images-with-media-queries/ */

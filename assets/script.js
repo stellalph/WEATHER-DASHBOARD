@@ -37,22 +37,22 @@ $(document).ready(function () {
 
     // Function to build page content based on API response
     function updateCurrentWeather(response) {
-        // Get weather icon details
+        // Weather icon details
         let weatherIcon = response.weather[0].icon;
         let weatherIconURL = `https://openweathermap.org/img/wn/${weatherIcon}.png`;
         let weatherIconDescription = response.weather[0].description;
-        // Temp: Convert the temp to fahrenheit
+        // Convert temp to fahrenheit
         let tempF = (response.main.temp - 273.15) * 1.80 + 32;
         // City Name
         searchCity = response.name;
-        // Update Current Weather Details
-        cityHeader.text(`${searchCity} (${todaysDate.format("MM/DD/YYYY")}) `);
+        // Current Weather Details
+        cityHeader.text(`${searchCity} (${todaysDate.format("DD/MM/YYYY")}) `);
         cityHeader.append(cityIcon.attr("src", weatherIconURL).attr("alt", `${weatherIconDescription}`).attr("title", `${weatherIconDescription}`));
         cityTemp.text(`Temperature: ${tempF.toFixed(2)} ℉`);
         cityHumidity.text(`Humidity: ${response.main.humidity}%`);
         cityWindSpeed.text(`Wind Speed: ${response.wind.speed} MPH`);
 
-        // Get UV Index... https://openweathermap.org/api/uvi
+        // UV Index  https://openweathermap.org/api/uvi - One Call API
         let currentLat = response.coord.lat;
         let currentLong = response.coord.lon;
         let uvQueryURL = `https://api.openweathermap.org/data/2.5/uvi?appid=b07abeb530d2aceffda3a30d1c88e617&lat=${currentLat}&lon=${currentLong}`;
@@ -100,7 +100,7 @@ $(document).ready(function () {
                 $(".card-day").each(function (day) {
                     day = day + 1;
                     // Forecast date
-                    let cardDateMoment = moment.unix(response.daily[day].dt).format("MM/DD/YYYY");
+                    let cardDateMoment = moment.unix(response.daily[day].dt).format("DD/MM/YYYY");
                     // Weather Icon Details
                     let weatherCardIcon = response.daily[day].weather[0].icon;
                     let weatherCardIconURL = `https://openweathermap.org/img/wn/${weatherCardIcon}.png`;
@@ -121,7 +121,7 @@ $(document).ready(function () {
                     // Humidity
                     $($(this)[0].children[0].children[3]).text(`Humidity: ${cardHumidity}%`);
                     // Wind
-                    //$($(this)[0].children[0].children[4]).text(`Wind: ${cardWind} MPH`);
+                    $($(this)[0].children[0].children[4]).text(`Wind: ${cardWind} MPH`);
                 });
             })
     };
@@ -132,7 +132,7 @@ $(document).ready(function () {
         localStorage.setItem("city" + localStorage.length, searchedCity);
     }
 
-    // Add searched cities as buttons to Past Searches
+    // Searched cities 
     let storedSearchList = "";
     function displaySearchTerms() {
         // Empty the search results div to render only one button per city
@@ -146,7 +146,7 @@ $(document).ready(function () {
     }
 
     //Event Listeners
-    // Search Box Display weather for searched city
+    // Search box display weather for searched city
     searchBtn.on("click", function (event) {
         event.preventDefault();
         storeSearchTerms(searchTerm[0].value.trim());
