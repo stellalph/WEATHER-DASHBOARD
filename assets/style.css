@@ -1,0 +1,109 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Red+Hat+Text:wght@400;700&family=Roboto:wght@100&display=swap');
+/* Set font for page */
+
+* {
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* For Sticky footer */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container-fluid {
+    flex: 1 0 auto;
+}
+
+/* Jumbotron / Header CSS */
+header.jumbotron {
+text-align: center;
+background-color: rgb(4, 53, 63);
+color: rgb(235, 223, 223);
+border-radius: 0;
+border-bottom: 8px solid black;
+padding: 32px 16px;
+margin: 0px;
+}
+
+/* Aside CSS */
+div.aside-col {
+    background-color: rgb(205, 209, 202);
+    height: auto;
+}
+
+#search-term {
+height: 55px;
+font-size: 20px;
+}
+
+/* UV Index Colors from https://www.epa.gov/sunsafety/uv-index-scale-0*/
+.green-uv {
+    /* >= 0 && < 3*/
+    background-color: green;
+}
+
+.yellow-uv {
+    /* >=3 && < 6 */
+    background-color: yellow;
+}
+
+.orange-uv {
+    /* >=6 && < 8 */
+    background-color: orange;
+}
+
+.red-uv {
+    /* >= 8 && < 11*/
+    background-color: red;
+}
+
+.purple-uv {
+    /* >= 11*/
+    background-color: purple;
+}
+
+div.card {
+    background-color: rgb(31, 43, 28);
+    color:aliceblue
+}
+
+/* Footer CSS */
+/* https://css-tricks.com/couple-takes-sticky-footer/ */
+
+footer.footer {
+    flex-shrink: 0;
+    font-size: .5rem;
+    background-color:rgb(4, 53, 63);
+    border-top: 10px solid black;
+    font-weight: bolder;
+}
+/* Media Queries for Background Images - https://web.dev/optimize-css-background-images-with-media-queries/ */
+
+/* For Mobile */
+@media (max-width: 480px) {
+    body {
+        background-image: url(../assets/images/image01.jpg);  
+    }
+}
+
+/* For Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(../assets/images/image01.jpg);
+    }
+}
+
+/* For Desktop*/
+@media (min-width: 1025px) {
+    body {
+	    background-image: url(../assets/images/image01.jpg);
+   }
+}
