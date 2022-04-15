@@ -40,12 +40,12 @@ THEN I am again presented with the current and future conditions for that city
 ![alt text](assets/images/Image03.png)
        
 #### <em>Searched results are saved</em> 
-    The searched city is searched in search history
+    The searched city is saved or stored in search history
 
 ![alt text](assets/images/Image04.png)
 
 #### <em>Searched results are available in the search history</em>
-    The traveller can view the past searches.  
+    The traveller can view the past searches by clicking on the button for the searched city.  
     
 ![alt text](assets/images/Image05.png)
 
