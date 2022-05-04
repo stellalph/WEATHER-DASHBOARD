@@ -72,3 +72,15 @@ https://stellalph.github.io/WEATHER-DASHBOARD/
 * The materials from The Unit Ahead: Server-Side APIs
 
 * https://www.arpansa.gov.au/our-services/monitoring/ultraviolet-radiation-monitoring/ultraviolet-radiation-index
+
+## TECHNOLOGIES USED
+
+* HTML
+
+* CSS Bootstrap
+
+* jQuery
+
+* Moment.js
+
+* Open Weather API
